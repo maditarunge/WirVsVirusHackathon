@@ -1,0 +1,106 @@
+@import url(font-awesome.min.css);
+
+body{
+    line-height: 1;
+}
+/*navbar*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #007e8a;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #204996;
+    animation-name: nav-fade;
+    animation-duration: 0.7s;
+}
+li a.button{
+    align-content: center;
+    text-align: center;
+    border-style: solid;
+    display:flex;
+}
+.active{
+    background-color: #2a2996;
+}
+@keyframes nav-fade {
+    from{background-color: #007e8a;}
+    to{background-color: #204996;}
+}
+h1{
+    text-align: center;
+    color: #424242;
+}
+/*.button.scrolly{
+    align-content: center;
+
+}*/
+button,
+.button{
+    border: solid 1px !important;
+    border-radius: 3em;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+button:after,
+.button:after{
+    border-radius: 3em;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+button.icon:before,
+.button.icon:before{
+    margin-right: 0.75em;
+}
+button.fit,
+.button.fit{
+    width: 100%;
+}
+ul.actions{
+    display: flex;
+    cursor: default;
+    list-style: none;
+    margin-left: -1em;
+    padding-left: 0;
+}
+ul.actions li{
+    padding: 0 0 0 1em;
+    vertical-align: middle;
+}
+ul.actions.special{
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+}
+ul.actions.fit{
+    width: calc(100% + 1em);
+}
+ul.actions.fit li{
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+}
+ul.actions.fit li > *{
+    width: 100%;
+}
