@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F30F6352426311600D7AA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F30F6342426311600D7AA9D /* AppDelegate.swift */; };
+		2F30F63C2426311600D7AA9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F30F63A2426311600D7AA9D /* Main.storyboard */; };
+		2F30F63E2426311900D7AA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F30F63D2426311900D7AA9D /* Assets.xcassets */; };
+		2F30F6412426311900D7AA9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F30F63F2426311900D7AA9D /* LaunchScreen.storyboard */; };
+		2F5286B2242635A7002B68CE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286B1242635A7002B68CE /* HomeViewController.swift */; };
+		2F5286B4242635B4002B68CE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286B3242635B4002B68CE /* ProfileViewController.swift */; };
+		2F5286B6242635C0002B68CE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286B5242635C0002B68CE /* SettingsViewController.swift */; };
+		2F5286B924263B3B002B68CE /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286B824263B3B002B68CE /* UIColorExtension.swift */; };
+		2F5286BC24263B6B002B68CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286BB24263B6B002B68CE /* Constants.swift */; };
+		2F5286BE24263F8F002B68CE /* UiButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286BD24263F8F002B68CE /* UiButtonExtension.swift */; };
+		2F5286C124264571002B68CE /* ShoppingTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286C024264571002B68CE /* ShoppingTrip.swift */; };
+		2F5286C3242645A6002B68CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286C2242645A6002B68CE /* User.swift */; };
+		2F5286C524264626002B68CE /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286C424264626002B68CE /* Coordinate.swift */; };
+		2F8F7FE62426534700C25FF6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE52426534700C25FF6 /* UIViewExtension.swift */; };
+		2F8F7FE8242658EB00C25FF6 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE7242658EB00C25FF6 /* UIFontExtension.swift */; };
+		2F8F7FEA24266D2A00C25FF6 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */; };
+		2F8F7FEC24266D5300C25FF6 /* ShoppingTripsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FEB24266D5300C25FF6 /* ShoppingTripsListViewController.swift */; };
+		2F8F7FEF242673F400C25FF6 /* ShoppingTripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FEE242673F400C25FF6 /* ShoppingTripCell.swift */; };
+		2F8F7FF12426740900C25FF6 /* GroceryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FF02426740900C25FF6 /* GroceryListCell.swift */; };
+		2F8F7FF3242676FB00C25FF6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FF2242676FB00C25FF6 /* DateExtension.swift */; };
+		2F8F7FF5242688BC00C25FF6 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FF4242688BC00C25FF6 /* GroceryList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F30F6312426311600D7AA9D /* wir vs virus hack hamsterkauf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wir vs virus hack hamsterkauf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F30F6342426311600D7AA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F30F63B2426311600D7AA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F30F63D2426311900D7AA9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F30F6402426311900D7AA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F30F6422426311900D7AA9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5286B1242635A7002B68CE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2F5286B3242635B4002B68CE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2F5286B5242635C0002B68CE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2F5286B824263B3B002B68CE /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2F5286BB24263B6B002B68CE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F5286BD24263F8F002B68CE /* UiButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiButtonExtension.swift; sourceTree = "<group>"; };
+		2F5286C024264571002B68CE /* ShoppingTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTrip.swift; sourceTree = "<group>"; };
+		2F5286C2242645A6002B68CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2F5286C424264626002B68CE /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		2F8F7FE52426534700C25FF6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2F8F7FE7242658EB00C25FF6 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
+		2F8F7FEB24266D5300C25FF6 /* ShoppingTripsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTripsListViewController.swift; sourceTree = "<group>"; };
+		2F8F7FEE242673F400C25FF6 /* ShoppingTripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTripCell.swift; sourceTree = "<group>"; };
+		2F8F7FF02426740900C25FF6 /* GroceryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListCell.swift; sourceTree = "<group>"; };
+		2F8F7FF2242676FB00C25FF6 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		2F8F7FF4242688BC00C25FF6 /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F30F62E2426311600D7AA9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F30F6282426311600D7AA9D = {
+			isa = PBXGroup;
+			children = (
+				2F30F6332426311600D7AA9D /* wir vs virus hack hamsterkauf */,
+				2F30F6322426311600D7AA9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F30F6322426311600D7AA9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F30F6312426311600D7AA9D /* wir vs virus hack hamsterkauf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F30F6332426311600D7AA9D /* wir vs virus hack hamsterkauf */ = {
+			isa = PBXGroup;
+			children = (
+				2F30F6342426311600D7AA9D /* AppDelegate.swift */,
+				2F30F6482426319200D7AA9D /* Storyboards */,
+				2F30F6492426319C00D7AA9D /* ViewControllers */,
+				2F8F7FED242673D100C25FF6 /* Cells */,
+				2F5286BF2426451E002B68CE /* Model */,
+				2F5286B724263B17002B68CE /* Extensions */,
+				2F5286BA24263B5F002B68CE /* Helpers */,
+				2F30F63D2426311900D7AA9D /* Assets.xcassets */,
+				2F30F6422426311900D7AA9D /* Info.plist */,
+			);
+			path = "wir vs virus hack hamsterkauf";
+			sourceTree = "<group>";
+		};
+		2F30F6482426319200D7AA9D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2F30F63A2426311600D7AA9D /* Main.storyboard */,
+				2F30F63F2426311900D7AA9D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2F30F6492426319C00D7AA9D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F5286B1242635A7002B68CE /* HomeViewController.swift */,
+				2F5286B3242635B4002B68CE /* ProfileViewController.swift */,
+				2F5286B5242635C0002B68CE /* SettingsViewController.swift */,
+				2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */,
+				2F8F7FEB24266D5300C25FF6 /* ShoppingTripsListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2F5286B724263B17002B68CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F5286B824263B3B002B68CE /* UIColorExtension.swift */,
+				2F5286BD24263F8F002B68CE /* UiButtonExtension.swift */,
+				2F8F7FE52426534700C25FF6 /* UIViewExtension.swift */,
+				2F8F7FE7242658EB00C25FF6 /* UIFontExtension.swift */,
+				2F8F7FF2242676FB00C25FF6 /* DateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F5286BA24263B5F002B68CE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2F5286BB24263B6B002B68CE /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2F5286BF2426451E002B68CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F5286C024264571002B68CE /* ShoppingTrip.swift */,
+				2F5286C2242645A6002B68CE /* User.swift */,
+				2F5286C424264626002B68CE /* Coordinate.swift */,
+				2F8F7FF4242688BC00C25FF6 /* GroceryList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F8F7FED242673D100C25FF6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2F8F7FEE242673F400C25FF6 /* ShoppingTripCell.swift */,
+				2F8F7FF02426740900C25FF6 /* GroceryListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F30F6302426311600D7AA9D /* wir vs virus hack hamsterkauf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F30F6452426311900D7AA9D /* Build configuration list for PBXNativeTarget "wir vs virus hack hamsterkauf" */;
+			buildPhases = (
+				2F30F62D2426311600D7AA9D /* Sources */,
+				2F30F62E2426311600D7AA9D /* Frameworks */,
+				2F30F62F2426311600D7AA9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wir vs virus hack hamsterkauf";
+			productName = "wir vs virus hack hamsterkauf";
+			productReference = 2F30F6312426311600D7AA9D /* wir vs virus hack hamsterkauf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F30F6292426311600D7AA9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Fischer, Benjamin (polidia)";
+				TargetAttributes = {
+					2F30F6302426311600D7AA9D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2F30F62C2426311600D7AA9D /* Build configuration list for PBXProject "wir vs virus hack hamsterkauf" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F30F6282426311600D7AA9D;
+			productRefGroup = 2F30F6322426311600D7AA9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F30F6302426311600D7AA9D /* wir vs virus hack hamsterkauf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F30F62F2426311600D7AA9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F30F6412426311900D7AA9D /* LaunchScreen.storyboard in Resources */,
+				2F30F63E2426311900D7AA9D /* Assets.xcassets in Resources */,
+				2F30F63C2426311600D7AA9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F30F62D2426311600D7AA9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5286B4242635B4002B68CE /* ProfileViewController.swift in Sources */,
+				2F8F7FF5242688BC00C25FF6 /* GroceryList.swift in Sources */,
+				2F8F7FF3242676FB00C25FF6 /* DateExtension.swift in Sources */,
+				2F8F7FEF242673F400C25FF6 /* ShoppingTripCell.swift in Sources */,
+				2F5286C124264571002B68CE /* ShoppingTrip.swift in Sources */,
+				2F8F7FE62426534700C25FF6 /* UIViewExtension.swift in Sources */,
+				2F8F7FEC24266D5300C25FF6 /* ShoppingTripsListViewController.swift in Sources */,
+				2F30F6352426311600D7AA9D /* AppDelegate.swift in Sources */,
+				2F5286B924263B3B002B68CE /* UIColorExtension.swift in Sources */,
+				2F8F7FF12426740900C25FF6 /* GroceryListCell.swift in Sources */,
+				2F5286B2242635A7002B68CE /* HomeViewController.swift in Sources */,
+				2F5286C3242645A6002B68CE /* User.swift in Sources */,
+				2F5286B6242635C0002B68CE /* SettingsViewController.swift in Sources */,
+				2F5286BC24263B6B002B68CE /* Constants.swift in Sources */,
+				2F5286BE24263F8F002B68CE /* UiButtonExtension.swift in Sources */,
+				2F8F7FEA24266D2A00C25FF6 /* GroceryListViewController.swift in Sources */,
+				2F8F7FE8242658EB00C25FF6 /* UIFontExtension.swift in Sources */,
+				2F5286C524264626002B68CE /* Coordinate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F30F63A2426311600D7AA9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F30F63B2426311600D7AA9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F30F63F2426311900D7AA9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F30F6402426311900D7AA9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F30F6432426311900D7AA9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F30F6442426311900D7AA9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F30F6462426311900D7AA9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCH94GY2AS;
+				INFOPLIST_FILE = "wir vs virus hack hamsterkauf/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wir-vs-virus-hack-hamsterkauf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2F30F6472426311900D7AA9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KCH94GY2AS;
+				INFOPLIST_FILE = "wir vs virus hack hamsterkauf/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wir-vs-virus-hack-hamsterkauf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F30F62C2426311600D7AA9D /* Build configuration list for PBXProject "wir vs virus hack hamsterkauf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F30F6432426311900D7AA9D /* Debug */,
+				2F30F6442426311900D7AA9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F30F6452426311900D7AA9D /* Build configuration list for PBXNativeTarget "wir vs virus hack hamsterkauf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F30F6462426311900D7AA9D /* Debug */,
+				2F30F6472426311900D7AA9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F30F6292426311600D7AA9D /* Project object */;
+}
