@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ShoppingListFragment">
+    tools:context=".View.Fragments.ShoppingListFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <android.support.constraint.ConstraintLayout
@@ -127,8 +127,8 @@
             android:id="@+id/ibGoShopping"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:src="@android:drawable/checkbox_on_background"
             android:background="@color/colorDarcBlue"
+            android:src="@mipmap/ic_shopping_bag"
             app:layout_constraintBottom_toTopOf="@+id/guideline85h"
             app:layout_constraintEnd_toStartOf="@+id/guideline40v"
             app:layout_constraintStart_toStartOf="@+id/guideline10v"
@@ -138,8 +138,8 @@
             android:id="@+id/ibAddList"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:src="@android:drawable/checkbox_on_background"
             android:background="@color/colorBlue"
+            android:src="@mipmap/ic_grocery_list"
             app:layout_constraintBottom_toTopOf="@+id/guideline85h"
             app:layout_constraintEnd_toStartOf="@+id/guideline90v"
             app:layout_constraintStart_toStartOf="@+id/guideline60v"

@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Hackathon</string>
     <string name="title_home">Home</string>
-    <string name="title_me">Me</string>
+    <string name="title_go_shopping">Go Shopping</string>
+    <string name="title_shopping_list">Shopping Lists</string>
+    <string name="title_profile">Profile</string>
     <string name="title_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
