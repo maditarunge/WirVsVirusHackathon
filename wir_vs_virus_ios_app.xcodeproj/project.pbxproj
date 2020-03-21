@@ -394,7 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCH94GY2AS;
-				INFOPLIST_FILE = "wir vs virus hack hamsterkauf/Info.plist";
+				INFOPLIST_FILE = wir_vs_virus_ios_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCH94GY2AS;
-				INFOPLIST_FILE = "wir vs virus hack hamsterkauf/Info.plist";
+				INFOPLIST_FILE = wir_vs_virus_ios_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
