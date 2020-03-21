@@ -31,7 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F30F6312426311600D7AA9D /* wir vs virus hack hamsterkauf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wir vs virus hack hamsterkauf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F30F6312426311600D7AA9D /* wir_vs_virus_ios_appir vs virus hack hamsterkauf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wir_vs_virus_ios_appir vs virus hack hamsterkauf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F30F6342426311600D7AA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F30F63B2426311600D7AA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F30F63D2426311900D7AA9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		2F30F6282426311600D7AA9D = {
 			isa = PBXGroup;
 			children = (
-				2F30F6332426311600D7AA9D /* wir vs virus hack hamsterkauf */,
+				2F30F6332426311600D7AA9D /* wir_vs_virus_ios_app */,
 				2F30F6322426311600D7AA9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,12 +78,12 @@
 		2F30F6322426311600D7AA9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F30F6312426311600D7AA9D /* wir vs virus hack hamsterkauf.app */,
+				2F30F6312426311600D7AA9D /* wir_vs_virus_ios_appir vs virus hack hamsterkauf.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F30F6332426311600D7AA9D /* wir vs virus hack hamsterkauf */ = {
+		2F30F6332426311600D7AA9D /* wir_vs_virus_ios_app */ = {
 			isa = PBXGroup;
 			children = (
 				2F30F6342426311600D7AA9D /* AppDelegate.swift */,
@@ -96,7 +96,7 @@
 				2F30F63D2426311900D7AA9D /* Assets.xcassets */,
 				2F30F6422426311900D7AA9D /* Info.plist */,
 			);
-			path = "wir vs virus hack hamsterkauf";
+			path = wir_vs_virus_ios_app;
 			sourceTree = "<group>";
 		};
 		2F30F6482426319200D7AA9D /* Storyboards */ = {
@@ -163,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F30F6302426311600D7AA9D /* wir vs virus hack hamsterkauf */ = {
+		2F30F6302426311600D7AA9D /* wir_vs_virus_ios_appir vs virus hack hamsterkauf */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F30F6452426311900D7AA9D /* Build configuration list for PBXNativeTarget "wir vs virus hack hamsterkauf" */;
+			buildConfigurationList = 2F30F6452426311900D7AA9D /* Build configuration list for PBXNativeTarget "wir_vs_virus_ios_appir vs virus hack hamsterkauf" */;
 			buildPhases = (
 				2F30F62D2426311600D7AA9D /* Sources */,
 				2F30F62E2426311600D7AA9D /* Frameworks */,
@@ -175,9 +175,9 @@
 			);
 			dependencies = (
 			);
-			name = "wir vs virus hack hamsterkauf";
+			name = "wir_vs_virus_ios_appir vs virus hack hamsterkauf";
 			productName = "wir vs virus hack hamsterkauf";
-			productReference = 2F30F6312426311600D7AA9D /* wir vs virus hack hamsterkauf.app */;
+			productReference = 2F30F6312426311600D7AA9D /* wir_vs_virus_ios_appir vs virus hack hamsterkauf.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F30F62C2426311600D7AA9D /* Build configuration list for PBXProject "wir vs virus hack hamsterkauf" */;
+			buildConfigurationList = 2F30F62C2426311600D7AA9D /* Build configuration list for PBXProject "wir_vs_virus_ios_app" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -208,7 +208,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F30F6302426311600D7AA9D /* wir vs virus hack hamsterkauf */,
+				2F30F6302426311600D7AA9D /* wir_vs_virus_ios_appir vs virus hack hamsterkauf */,
 			);
 		};
 /* End PBXProject section */
@@ -429,7 +429,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F30F62C2426311600D7AA9D /* Build configuration list for PBXProject "wir vs virus hack hamsterkauf" */ = {
+		2F30F62C2426311600D7AA9D /* Build configuration list for PBXProject "wir_vs_virus_ios_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F30F6432426311900D7AA9D /* Debug */,
@@ -438,7 +438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F30F6452426311900D7AA9D /* Build configuration list for PBXNativeTarget "wir vs virus hack hamsterkauf" */ = {
+		2F30F6452426311900D7AA9D /* Build configuration list for PBXNativeTarget "wir_vs_virus_ios_appir vs virus hack hamsterkauf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F30F6462426311900D7AA9D /* Debug */,
