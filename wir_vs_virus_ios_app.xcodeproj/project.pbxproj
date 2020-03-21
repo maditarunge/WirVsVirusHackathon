@@ -31,7 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F30F6312426311600D7AA9D /* wir_vs_virus_ios_appir vs virus hack hamsterkauf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wir_vs_virus_ios_appir vs virus hack hamsterkauf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F30F6312426311600D7AA9D /* wir_vs_virus_ios_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wir_vs_virus_ios_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F30F6342426311600D7AA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F30F63B2426311600D7AA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F30F63D2426311900D7AA9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		2F30F6322426311600D7AA9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F30F6312426311600D7AA9D /* wir_vs_virus_ios_appir vs virus hack hamsterkauf.app */,
+				2F30F6312426311600D7AA9D /* wir_vs_virus_ios_app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			);
 			name = "wir_vs_virus_ios_appir vs virus hack hamsterkauf";
 			productName = "wir vs virus hack hamsterkauf";
-			productReference = 2F30F6312426311600D7AA9D /* wir_vs_virus_ios_appir vs virus hack hamsterkauf.app */;
+			productReference = 2F30F6312426311600D7AA9D /* wir_vs_virus_ios_app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -400,8 +400,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "wir-vs-virus-hack-hamsterkauf";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "wir-vs-virus-ios-app";
+				PRODUCT_NAME = wir_vs_virus_ios_app;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -419,8 +419,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "wir-vs-virus-hack-hamsterkauf";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "wir-vs-virus-ios-app";
+				PRODUCT_NAME = wir_vs_virus_ios_app;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
