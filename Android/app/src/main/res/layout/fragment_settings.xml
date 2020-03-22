@@ -50,7 +50,8 @@
                     android:layout_marginRight="10dp"
                     android:ems="10"
                     android:hint="@string/settings_first_name"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorBlack" />
             </LinearLayout>
 
             <LinearLayout
@@ -68,7 +69,8 @@
                     android:layout_marginRight="10dp"
                     android:ems="10"
                     android:hint="@string/settings_sur_name"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorBlack" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -90,6 +92,7 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/settings_title_address"
+            android:textColor="@color/colorBlack"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -108,7 +111,8 @@
                 android:layout_marginRight="10dp"
                 android:ems="10"
                 android:hint="@string/settings_street"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/colorBlack" />
         </LinearLayout>
 
         <LinearLayout
@@ -126,7 +130,8 @@
                 android:layout_marginRight="10dp"
                 android:ems="10"
                 android:hint="@string/settings_plz"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/colorBlack" />
         </LinearLayout>
 
         <LinearLayout
@@ -144,7 +149,8 @@
                 android:layout_marginRight="10dp"
                 android:ems="10"
                 android:hint="@string/settings_city"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColor="@color/colorBlack" />
         </LinearLayout>
     </LinearLayout>
 
@@ -165,6 +171,7 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/settings_title_contact_information"
+            android:textColor="@color/colorBlack"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -183,7 +190,8 @@
                 android:layout_marginRight="10dp"
                 android:ems="10"
                 android:hint="@string/settings_telephone"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:textColor="@color/colorBlack" />
         </LinearLayout>
 
         <LinearLayout
@@ -201,7 +209,8 @@
                 android:layout_marginRight="10dp"
                 android:ems="10"
                 android:hint="@string/settings_mail"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorBlack" />
         </LinearLayout>
     </LinearLayout>
 
@@ -222,6 +231,7 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="@string/settings_data_protection"
+            android:textColor="@color/colorBlack"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -232,7 +242,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_weight="4"
-            android:text="@string/settings_data_protection_content" />
+            android:text="@string/settings_data_protection_content"
+            android:textColor="@color/colorBlack" />
     </LinearLayout>
 
 </LinearLayout>

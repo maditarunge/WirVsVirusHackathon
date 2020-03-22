@@ -1,4 +1,4 @@
-package com.example.hackathon.View;
+package com.example.hackathon.View.ListAdapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

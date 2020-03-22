@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import com.example.hackathon.Consts;
 import com.example.hackathon.R;
-import com.example.hackathon.View.GoShoppingListAdapter;
+import com.example.hackathon.View.ListAdapter.GoShoppingListAdapter;
 
 import java.util.ArrayList;
 import java.util.Date;
