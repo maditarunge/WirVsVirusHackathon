@@ -20,6 +20,10 @@
 		2F5286C124264571002B68CE /* ShoppingTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286C024264571002B68CE /* ShoppingTrip.swift */; };
 		2F5286C3242645A6002B68CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286C2242645A6002B68CE /* User.swift */; };
 		2F5286C524264626002B68CE /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5286C424264626002B68CE /* Coordinate.swift */; };
+		2F58C31E24277D8C008938FE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F58C31D24277D8C008938FE /* Alamofire.framework */; };
+		2F58C32324277E32008938FE /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32224277E32008938FE /* ApiError.swift */; };
+		2F58C32524277E57008938FE /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32424277E57008938FE /* Connectivity.swift */; };
+		2F58C32724277E6F008938FE /* ApiErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32624277E6F008938FE /* ApiErrorHandling.swift */; };
 		2F8F7FE62426534700C25FF6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE52426534700C25FF6 /* UIViewExtension.swift */; };
 		2F8F7FE8242658EB00C25FF6 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE7242658EB00C25FF6 /* UIFontExtension.swift */; };
 		2F8F7FEA24266D2A00C25FF6 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */; };
@@ -46,6 +50,10 @@
 		2F5286C024264571002B68CE /* ShoppingTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTrip.swift; sourceTree = "<group>"; };
 		2F5286C2242645A6002B68CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2F5286C424264626002B68CE /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		2F58C31D24277D8C008938FE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		2F58C32224277E32008938FE /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		2F58C32424277E57008938FE /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		2F58C32624277E6F008938FE /* ApiErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorHandling.swift; sourceTree = "<group>"; };
 		2F8F7FE52426534700C25FF6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2F8F7FE7242658EB00C25FF6 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F58C31E24277D8C008938FE /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +81,7 @@
 			children = (
 				2F30F6332426311600D7AA9D /* wir_vs_virus_ios_app */,
 				2F30F6322426311600D7AA9D /* Products */,
+				2F58C31C24277D8C008938FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +102,8 @@
 				2F8F7FED242673D100C25FF6 /* Cells */,
 				2F5286BF2426451E002B68CE /* Model */,
 				2F5286B724263B17002B68CE /* Extensions */,
+				2F58C31B24277A94008938FE /* Networking */,
+				2F58C31A24277A84008938FE /* Services */,
 				2F5286BA24263B5F002B68CE /* Helpers */,
 				2F30F63D2426311900D7AA9D /* Assets.xcassets */,
 				2F30F6422426311900D7AA9D /* Info.plist */,
@@ -151,6 +163,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2F58C31A24277A84008938FE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2F58C31B24277A94008938FE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2F58C32224277E32008938FE /* ApiError.swift */,
+				2F58C32424277E57008938FE /* Connectivity.swift */,
+				2F58C32624277E6F008938FE /* ApiErrorHandling.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2F58C31C24277D8C008938FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F58C31D24277D8C008938FE /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F8F7FED242673D100C25FF6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +207,7 @@
 				2F30F62D2426311600D7AA9D /* Sources */,
 				2F30F62E2426311600D7AA9D /* Frameworks */,
 				2F30F62F2426311600D7AA9D /* Resources */,
+				2F58C32124277DB6008938FE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -226,6 +264,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F58C32124277DB6008938FE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F30F62D2426311600D7AA9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -236,6 +296,7 @@
 				2F8F7FF3242676FB00C25FF6 /* DateExtension.swift in Sources */,
 				2F8F7FEF242673F400C25FF6 /* ShoppingTripCell.swift in Sources */,
 				2F5286C124264571002B68CE /* ShoppingTrip.swift in Sources */,
+				2F58C32724277E6F008938FE /* ApiErrorHandling.swift in Sources */,
 				2F8F7FE62426534700C25FF6 /* UIViewExtension.swift in Sources */,
 				2F8F7FEC24266D5300C25FF6 /* ShoppingTripsListViewController.swift in Sources */,
 				2F30F6352426311600D7AA9D /* AppDelegate.swift in Sources */,
@@ -243,6 +304,8 @@
 				2F8F7FF12426740900C25FF6 /* GroceryListCell.swift in Sources */,
 				2F5286B2242635A7002B68CE /* HomeViewController.swift in Sources */,
 				2F5286C3242645A6002B68CE /* User.swift in Sources */,
+				2F58C32524277E57008938FE /* Connectivity.swift in Sources */,
+				2F58C32324277E32008938FE /* ApiError.swift in Sources */,
 				2F5286B6242635C0002B68CE /* SettingsViewController.swift in Sources */,
 				2F5286BC24263B6B002B68CE /* Constants.swift in Sources */,
 				2F5286BE24263F8F002B68CE /* UiButtonExtension.swift in Sources */,
@@ -394,6 +457,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCH94GY2AS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = wir_vs_virus_ios_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -413,6 +480,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KCH94GY2AS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = wir_vs_virus_ios_app/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
