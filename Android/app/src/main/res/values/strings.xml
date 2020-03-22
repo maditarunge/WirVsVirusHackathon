@@ -22,5 +22,19 @@
     <string name="go_shopping_button">Liste anlegen</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="settings_first_name">Vorname</string>
+    <string name="settings_sur_name">Nachname</string>
+    <string name="settings_street">Straße</string>
+    <string name="settings_plz">Postleitzahl</string>
+    <string name="settings_city">Stadt</string>
+    <string name="settings_telephone">Telefon</string>
+    <string name="settings_mail">Mail</string>
+
+    <string name="settings_title_address">Meine Adresse</string>
+    <string name="settings_title_contact_information">Meine Kontaktdaten</string>
+    <string name="settings_data_protection">Datenschutz</string>
+    <string name="settings_data_protection_content">-- Hier können Datenschutzinformationen stehen --</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

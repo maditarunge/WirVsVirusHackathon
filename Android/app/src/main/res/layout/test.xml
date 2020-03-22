@@ -9,24 +9,29 @@
         android:id="@+id/llName"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="10dp"
         android:layout_weight="2"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20h"
+        app:layout_constraintEnd_toStartOf="@id/guideline95v"
+        app:layout_constraintStart_toStartOf="@id/guideline05v"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/llPicture"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20h"
+            app:layout_constraintEnd_toStartOf="@id/guideline40v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/ivProfile"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/colorDarcBlue"
-                app:layout_constraintDimensionRatio="1:1"
                 app:srcCompat="@mipmap/ic_profile" />
         </LinearLayout>
 
@@ -34,8 +39,12 @@
             android:id="@+id/llNames"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:orientation="vertical">
+            android:layout_weight="3"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20h"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline40v"
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:id="@+id/llFirstName"
@@ -48,10 +57,8 @@
                     android:id="@+id/etFirstName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:hint="Text Example"
                     android:ems="10"
-                    android:hint="@string/settings_first_name"
                     android:inputType="textPersonName" />
             </LinearLayout>
 
@@ -66,10 +73,8 @@
                     android:id="@+id/etSurName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:hint="Text Example"
                     android:ems="10"
-                    android:hint="@string/settings_sur_name"
                     android:inputType="textPersonName" />
             </LinearLayout>
         </LinearLayout>
@@ -80,18 +85,19 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
-        android:layout_margin="10dp"
-        android:background="@drawable/border"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline50h"
+        app:layout_constraintEnd_toStartOf="@id/guideline95v"
+        app:layout_constraintStart_toStartOf="@id/guideline05v"
+        app:layout_constraintTop_toTopOf="@id/guideline20h">
 
         <TextView
             android:id="@+id/tvAddress"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="@string/settings_title_address"
+            android:text="TextView"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -106,10 +112,8 @@
                 android:id="@+id/etStreet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:hint="Text Example"
                 android:ems="10"
-                android:hint="@string/settings_street"
                 android:inputType="textPersonName" />
         </LinearLayout>
 
@@ -124,10 +128,8 @@
                 android:id="@+id/etPlz"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:hint="Text Example"
                 android:ems="10"
-                android:hint="@string/settings_plz"
                 android:inputType="textPersonName" />
         </LinearLayout>
 
@@ -142,10 +144,8 @@
                 android:id="@+id/etCity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:hint="Text Example"
                 android:ems="10"
-                android:hint="@string/settings_city"
                 android:inputType="textPersonName" />
         </LinearLayout>
     </LinearLayout>
@@ -155,18 +155,19 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:layout_margin="10dp"
-        android:background="@drawable/border"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline75h"
+        app:layout_constraintEnd_toStartOf="@id/guideline95v"
+        app:layout_constraintStart_toStartOf="@id/guideline05v"
+        app:layout_constraintTop_toTopOf="@id/guideline50h">
 
         <TextView
             android:id="@+id/tvContactData"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="@string/settings_title_contact_information"
+            android:text="TextView"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -180,11 +181,9 @@
             <EditText
                 android:id="@+id/etPhone"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:hint="Text Example"
                 android:ems="10"
-                android:hint="@string/settings_telephone"
                 android:inputType="phone" />
         </LinearLayout>
 
@@ -198,11 +197,9 @@
             <EditText
                 android:id="@+id/etMail"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:hint="Text Example"
                 android:ems="10"
-                android:hint="@string/settings_mail"
                 android:inputType="textEmailAddress" />
         </LinearLayout>
     </LinearLayout>
@@ -212,29 +209,28 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:layout_margin="10dp"
-        android:background="@drawable/border"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline95v"
+        app:layout_constraintStart_toStartOf="@id/guideline05v"
+        app:layout_constraintTop_toTopOf="@id/guideline75h">
 
         <TextView
             android:id="@+id/tvDataProtection"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="@string/settings_data_protection"
+            android:text="TextView"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tvDataProtectionContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_weight="4"
-            android:text="@string/settings_data_protection_content" />
+            android:text="TextView" />
     </LinearLayout>
 
 </LinearLayout>
