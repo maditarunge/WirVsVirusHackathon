@@ -42,9 +42,6 @@ public class SettingsFragment extends Fragment {
         sd.getPaint().setColor(getResources().getColor(R.color.colorDarcBlue));
         ImageView iv = (ImageView) rootView.findViewById(R.id.ivProfile);
         iv.setBackground(sd);
-        LinearLayout llNames = rootView.findViewById(R.id.llNames);
-        iv.getLayoutParams().height = llNames.getLayoutParams().height;
-        iv.getLayoutParams().width = llNames.getLayoutParams().height;
 
         Log.i("CREATED!", "Fragment is created");
         return rootView;
