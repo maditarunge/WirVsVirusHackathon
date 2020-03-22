@@ -7,9 +7,19 @@
     <string name="title_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_home">Willkommen zurück, </string>
-    <string name="description_01">Bleibe sicher vernetzt</string>
-    <string name="description_02">Hier findest du Menschen in deiner Nähe mit denen du dich vernetzen kannst</string>
+    <string name="home_hello_home">Willkommen zurück, </string>
+    <string name="home_description_01">Bleibe sicher vernetzt</string>
+    <string name="home_description_02">Hier findest du Menschen in deiner Nähe mit denen du dich vernetzen kannst</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="shopping_list_title">Anstehende Einkäufe</string>
+    <string name="shopping_list_description">Hier bekommst du eine Übersicht über alle anstehenden Einkäufe in deiner Nachbarschaft</string>
+    <string name="shopping_list_button">Einkauf anlegen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="go_shopping_title">Benötigte Einkäufe</string>
+    <string name="go_shopping_description">Hier siehst du eine Liste der benötigten Einkäufe in deiner Nachbarschaft</string>
+    <string name="go_shopping_button">Liste anlegen</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -81,20 +81,11 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.9"/>
 
-        <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:layout_constraintBottom_toTopOf="@+id/guideline15h"-->
-        <!--app:layout_constraintTop_toTopOf="@+id/guideline10h"-->
-        <!--app:layout_constraintEnd_toStartOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--android:text="@string/hello_blank_fragment" />-->
-
         <TextView
             android:id="@+id/tw_hello"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/hello_home"
+            android:text="@string/home_hello_home"
             android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline10h"
             app:layout_constraintEnd_toStartOf="parent"
@@ -105,7 +96,7 @@
             android:id="@+id/tvDescription01"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/description_01"
+            android:text="@string/home_description_01"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline20h"
             app:layout_constraintEnd_toStartOf="parent"
@@ -116,7 +107,7 @@
             android:id="@+id/tvDescription02"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/description_02"
+            android:text="@string/home_description_02"
             android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline25h"
             app:layout_constraintEnd_toStartOf="parent"
