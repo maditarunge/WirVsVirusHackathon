@@ -12,13 +12,12 @@
         android:gravity="center_vertical"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/etDate"
+        <ImageView
+            android:id="@+id/ivIcon"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:editable="false"
-            android:ems="10"
-            android:inputType="date" />
+            android:layout_height="match_parent"
+            app:srcCompat="@color/colorBlue" />
+
     </LinearLayout>
 
     <LinearLayout
