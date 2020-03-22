@@ -39,17 +39,35 @@ class GroceryListViewController: UIViewController {
     // MARK: private functions
     private func setupDummyLists() -> [GroceryList] {
         var lists = [GroceryList]()
+        var items = [GroceryListItem]()
+        
+        var listItem = GroceryListItem()
+        listItem.title = "Spaghetti"
+        listItem.bio = false
+        listItem.glutenFree = false
+        items.append(listItem)
+        
         var list1 = GroceryList()
         list1.id = 1
         list1.receiver = User.createDummyUser()
         list1.title = "Lidl Einkauf"
+        list1.items = items
         lists.append(list1)
         
         return lists
     }
     
+    // some segue preparations for the detail view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // TODO hier dann die einzelsicht vorbereiten
+        guard tableView.indexPathForSelectedRow != nil else {
+            return
+        }
+        if segue.identifier == Constants.Segues.showListeItemDetailSeque {
+            let vc = segue.destination as! GroceryListDetailViewController
+            
+            vc.groceryList = lists[tableView.indexPathForSelectedRow!.row]
+            
+        }
     }
     
 }
@@ -57,6 +75,11 @@ class GroceryListViewController: UIViewController {
 extension GroceryListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lists.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // trigger the segue to the detail view controller
+        self.performSegue(withIdentifier: Constants.Segues.showListeItemDetailSeque, sender: self)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -122,8 +145,8 @@ extension GroceryListViewController: UITableViewDelegate, UITableViewDataSource 
         // createListVC
         let createListVC = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.createListVC) as! CreateGroceryListViewController
         createListVC.createListButtonDelegate = self
-               createListVC.modalPresentationStyle = .fullScreen
-               present(createListVC, animated: true, completion:nil)
+        createListVC.modalPresentationStyle = .fullScreen
+        present(createListVC, animated: true, completion:nil)
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

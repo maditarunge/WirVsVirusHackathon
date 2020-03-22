@@ -26,6 +26,7 @@ struct Constants {
     struct Segues {
         
         static let showCreateListSegue = "showCreateListSegue"
+        static let showListeItemDetailSeque = "showListeItemDetailSeque"
     }
  
     struct Storyboard {

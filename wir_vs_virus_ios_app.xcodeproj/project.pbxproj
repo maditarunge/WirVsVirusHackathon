@@ -28,6 +28,7 @@
 		2F58C32B242790C7008938FE /* CreateShoppingListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32A242790C7008938FE /* CreateShoppingListItemCell.swift */; };
 		2F58C32F24279153008938FE /* GroceryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32E24279153008938FE /* GroceryListItem.swift */; };
 		2F58C331242799F8008938FE /* CreateListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C330242799F8008938FE /* CreateListItemViewController.swift */; };
+		2F58C3332427A700008938FE /* GroceryListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C3322427A700008938FE /* GroceryListDetailViewController.swift */; };
 		2F8F7FE62426534700C25FF6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE52426534700C25FF6 /* UIViewExtension.swift */; };
 		2F8F7FE8242658EB00C25FF6 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE7242658EB00C25FF6 /* UIFontExtension.swift */; };
 		2F8F7FEA24266D2A00C25FF6 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */; };
@@ -62,6 +63,7 @@
 		2F58C32A242790C7008938FE /* CreateShoppingListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShoppingListItemCell.swift; sourceTree = "<group>"; };
 		2F58C32E24279153008938FE /* GroceryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListItem.swift; sourceTree = "<group>"; };
 		2F58C330242799F8008938FE /* CreateListItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateListItemViewController.swift; sourceTree = "<group>"; };
+		2F58C3322427A700008938FE /* GroceryListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListDetailViewController.swift; sourceTree = "<group>"; };
 		2F8F7FE52426534700C25FF6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2F8F7FE7242658EB00C25FF6 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				2F8F7FEB24266D5300C25FF6 /* ShoppingTripsListViewController.swift */,
 				2F58C32824278DEE008938FE /* CreateGroceryListViewController.swift */,
 				2F58C330242799F8008938FE /* CreateListItemViewController.swift */,
+				2F58C3322427A700008938FE /* GroceryListDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5286B4242635B4002B68CE /* ProfileViewController.swift in Sources */,
+				2F58C3332427A700008938FE /* GroceryListDetailViewController.swift in Sources */,
 				2F58C32B242790C7008938FE /* CreateShoppingListItemCell.swift in Sources */,
 				2F8F7FF5242688BC00C25FF6 /* GroceryList.swift in Sources */,
 				2F8F7FF3242676FB00C25FF6 /* DateExtension.swift in Sources */,

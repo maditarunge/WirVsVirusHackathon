@@ -22,6 +22,7 @@ class CreateGroceryListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var saveListButton: UIButton!
     
+    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var addItemButton: UIButton!
     // MARK: properties
     var listItems = [GroceryListItem]()
@@ -44,7 +45,7 @@ class CreateGroceryListViewController: UIViewController {
     
     private func setupView() {
         
-        infoView.backgroundColor = Constants.shoppingColor
+        infoView.backgroundColor = Constants.groceryColor
         infoView.clipsToBounds = true
         infoView.layer.cornerRadius = 50
         infoView.layer.maskedCorners = [.layerMinXMaxYCorner]
@@ -58,15 +59,22 @@ class CreateGroceryListViewController: UIViewController {
          let storePlaceHolder = NSMutableAttributedString(string: "Name des Martktes", attributes: boldAttribute)
         storeNameField.attributedPlaceholder = storePlaceHolder
         
-        addItemButton.setTitle("Eintrag hinzufügen", for: .normal)
-        addItemButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
+        addItemButton.setTitle("+ Eintrag hinzufügen", for: .normal)
+        addItemButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .black)
+        addItemButton.setTitleColor(.black, for: .normal)
+        addItemButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         addItemButton.addTarget(self, action: #selector(addItemTapped), for: .touchUpInside)
                 
         saveListButton.setTitle("Liste abspeichern", for: .normal)
         saveListButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
         saveListButton.addTarget(self, action: #selector(saveListTapped), for: .touchUpInside)
+        saveListButton.backgroundColor = Constants.groceryColor
+        saveListButton.setTitleColor(.white, for: .normal)
         
-        
+        cancelButton.setTitle("Abbrechen", for: .normal)
+        cancelButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
+        cancelButton.backgroundColor = .red
+        cancelButton.setTitleColor(.white, for: .normal)
     }
     
     @objc func saveListTapped() {
@@ -89,6 +97,11 @@ class CreateGroceryListViewController: UIViewController {
         addItemVC.createListButtonDelegate = self
         addItemVC.modalPresentationStyle = .fullScreen
         present(addItemVC, animated: true, completion:nil)
+    }
+    
+    
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
 }

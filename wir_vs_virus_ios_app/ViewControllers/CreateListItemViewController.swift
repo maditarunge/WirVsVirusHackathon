@@ -57,10 +57,14 @@ class CreateListItemViewController: UIViewController {
         saveButton.setTitle("Eintrag hinzufügen", for: .normal)
         saveButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
         saveButton.addTarget(self, action: #selector(addItemTapped), for: .touchUpInside)
+        saveButton.backgroundColor = Constants.groceryColor
+        saveButton.setTitleColor(.white, for: .normal)
         
         cancelButton.setTitle("Abbrechen", for: .normal)
         cancelButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
         cancelButton.addTarget(self, action: #selector(cancelTapped), for: .touchUpInside)
+        cancelButton.backgroundColor = .red
+        cancelButton.setTitleColor(.white, for: .normal)
     }
 
     @objc func addItemTapped() {
