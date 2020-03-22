@@ -54,6 +54,8 @@ class GroceryListDetailViewController: UIViewController {
         
         acceptButton.setTitle("Einkauf übernehmen", for: .normal)
         acceptButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
+        acceptButton.backgroundColor = Constants.groceryColor
+        acceptButton.setTitleColor(.white, for: .normal)
         
         backButton.setTitle("Zurück", for: .normal)
         backButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)

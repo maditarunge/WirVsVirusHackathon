@@ -126,17 +126,18 @@ extension GroceryListViewController: UITableViewDelegate, UITableViewDataSource 
         infoLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -25).isActive = true
         
         // creating the create trip button
-        let createTripButton = UIButton();
-        createTripButton.setTitle("Liste anlegen", for: .normal)
-        createTripButton.backgroundColor = UIColor().hexStringToUIColor(hex: "#FF4646")
-        createTripButton.translatesAutoresizingMaskIntoConstraints = false
-        createTripButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
-        createTripButton.addTarget(self, action: #selector(createListButtonTapped), for: .touchUpInside)
+        let createListButton = UIButton();
+        createListButton.setTitle("Liste anlegen", for: .normal)
+        createListButton.backgroundColor = UIColor().hexStringToUIColor(hex: "#FF4646")
+        createListButton.translatesAutoresizingMaskIntoConstraints = false
+        createListButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
+        createListButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        createListButton.addTarget(self, action: #selector(createListButtonTapped), for: .touchUpInside)
         // adding the create trip button
-        view.addSubview(createTripButton)
+        view.addSubview(createListButton)
         // configuring the create trips constraints
-        createTripButton.topAnchor.constraint(equalTo: infoLabel.bottomAnchor, constant: 25).isActive = true
-        createTripButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
+        createListButton.topAnchor.constraint(equalTo: infoLabel.bottomAnchor, constant: 25).isActive = true
+        createListButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
         
         return view
     }

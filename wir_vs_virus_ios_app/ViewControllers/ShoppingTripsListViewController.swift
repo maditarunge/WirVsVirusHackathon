@@ -120,6 +120,7 @@ extension ShoppingTripsListViewController: UITableViewDelegate, UITableViewDataS
         createTripButton.backgroundColor = UIColor().hexStringToUIColor(hex: "#FF4646")
         createTripButton.translatesAutoresizingMaskIntoConstraints = false
         createTripButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
+        createTripButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         // adding the create trip button
         view.addSubview(createTripButton)
         // configuring the create trips constraints
