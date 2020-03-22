@@ -113,6 +113,7 @@ extension GroceryListViewController: UITableViewDelegate, UITableViewDataSource 
         createTripButton.backgroundColor = UIColor().hexStringToUIColor(hex: "#FF4646")
         createTripButton.translatesAutoresizingMaskIntoConstraints = false
         createTripButton.makeButtonRound(radius: 10, borderWidth: 1, borderColor: .clear)
+        createTripButton.addTarget(self, action: #selector(createListButtonTapped), for: .touchUpInside)
         // adding the create trip button
         view.addSubview(createTripButton)
         // configuring the create trips constraints
@@ -120,6 +121,10 @@ extension GroceryListViewController: UITableViewDelegate, UITableViewDataSource 
         createTripButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 25).isActive = true
         
         return view
+    }
+    
+    @objc func createListButtonTapped() {
+        performSegue(withIdentifier: Constants.Segues.showCreateListSegue, sender: self)
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

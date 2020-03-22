@@ -19,6 +19,18 @@ struct Constants {
         
         static let groceryListView = "groceryListView"
         
+        static let createShoppingListItemCell = "createShoppingListItemCell"
+        
     }
     
+    struct Segues {
+        
+        static let showCreateListSegue = "showCreateListSegue"
+    }
+ 
+    struct Storyboard {
+        
+        static let addItemVC = "addItemVC"
+        
+    }
 }

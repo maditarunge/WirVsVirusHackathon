@@ -24,6 +24,10 @@
 		2F58C32324277E32008938FE /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32224277E32008938FE /* ApiError.swift */; };
 		2F58C32524277E57008938FE /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32424277E57008938FE /* Connectivity.swift */; };
 		2F58C32724277E6F008938FE /* ApiErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32624277E6F008938FE /* ApiErrorHandling.swift */; };
+		2F58C32924278DEE008938FE /* CreateGroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32824278DEE008938FE /* CreateGroceryListViewController.swift */; };
+		2F58C32B242790C7008938FE /* CreateShoppingListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32A242790C7008938FE /* CreateShoppingListItemCell.swift */; };
+		2F58C32F24279153008938FE /* GroceryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C32E24279153008938FE /* GroceryListItem.swift */; };
+		2F58C331242799F8008938FE /* CreateListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C330242799F8008938FE /* CreateListItemViewController.swift */; };
 		2F8F7FE62426534700C25FF6 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE52426534700C25FF6 /* UIViewExtension.swift */; };
 		2F8F7FE8242658EB00C25FF6 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE7242658EB00C25FF6 /* UIFontExtension.swift */; };
 		2F8F7FEA24266D2A00C25FF6 /* GroceryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */; };
@@ -54,6 +58,10 @@
 		2F58C32224277E32008938FE /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		2F58C32424277E57008938FE /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		2F58C32624277E6F008938FE /* ApiErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorHandling.swift; sourceTree = "<group>"; };
+		2F58C32824278DEE008938FE /* CreateGroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroceryListViewController.swift; sourceTree = "<group>"; };
+		2F58C32A242790C7008938FE /* CreateShoppingListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateShoppingListItemCell.swift; sourceTree = "<group>"; };
+		2F58C32E24279153008938FE /* GroceryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListItem.swift; sourceTree = "<group>"; };
+		2F58C330242799F8008938FE /* CreateListItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateListItemViewController.swift; sourceTree = "<group>"; };
 		2F8F7FE52426534700C25FF6 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2F8F7FE7242658EB00C25FF6 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +136,8 @@
 				2F5286B5242635C0002B68CE /* SettingsViewController.swift */,
 				2F8F7FE924266D2A00C25FF6 /* GroceryListViewController.swift */,
 				2F8F7FEB24266D5300C25FF6 /* ShoppingTripsListViewController.swift */,
+				2F58C32824278DEE008938FE /* CreateGroceryListViewController.swift */,
+				2F58C330242799F8008938FE /* CreateListItemViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -159,6 +169,7 @@
 				2F5286C2242645A6002B68CE /* User.swift */,
 				2F5286C424264626002B68CE /* Coordinate.swift */,
 				2F8F7FF4242688BC00C25FF6 /* GroceryList.swift */,
+				2F58C32E24279153008938FE /* GroceryListItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +204,7 @@
 			children = (
 				2F8F7FEE242673F400C25FF6 /* ShoppingTripCell.swift */,
 				2F8F7FF02426740900C25FF6 /* GroceryListCell.swift */,
+				2F58C32A242790C7008938FE /* CreateShoppingListItemCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -292,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5286B4242635B4002B68CE /* ProfileViewController.swift in Sources */,
+				2F58C32B242790C7008938FE /* CreateShoppingListItemCell.swift in Sources */,
 				2F8F7FF5242688BC00C25FF6 /* GroceryList.swift in Sources */,
 				2F8F7FF3242676FB00C25FF6 /* DateExtension.swift in Sources */,
 				2F8F7FEF242673F400C25FF6 /* ShoppingTripCell.swift in Sources */,
@@ -299,6 +312,7 @@
 				2F58C32724277E6F008938FE /* ApiErrorHandling.swift in Sources */,
 				2F8F7FE62426534700C25FF6 /* UIViewExtension.swift in Sources */,
 				2F8F7FEC24266D5300C25FF6 /* ShoppingTripsListViewController.swift in Sources */,
+				2F58C32924278DEE008938FE /* CreateGroceryListViewController.swift in Sources */,
 				2F30F6352426311600D7AA9D /* AppDelegate.swift in Sources */,
 				2F5286B924263B3B002B68CE /* UIColorExtension.swift in Sources */,
 				2F8F7FF12426740900C25FF6 /* GroceryListCell.swift in Sources */,
@@ -309,8 +323,10 @@
 				2F5286B6242635C0002B68CE /* SettingsViewController.swift in Sources */,
 				2F5286BC24263B6B002B68CE /* Constants.swift in Sources */,
 				2F5286BE24263F8F002B68CE /* UiButtonExtension.swift in Sources */,
+				2F58C331242799F8008938FE /* CreateListItemViewController.swift in Sources */,
 				2F8F7FEA24266D2A00C25FF6 /* GroceryListViewController.swift in Sources */,
 				2F8F7FE8242658EB00C25FF6 /* UIFontExtension.swift in Sources */,
+				2F58C32F24279153008938FE /* GroceryListItem.swift in Sources */,
 				2F5286C524264626002B68CE /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
