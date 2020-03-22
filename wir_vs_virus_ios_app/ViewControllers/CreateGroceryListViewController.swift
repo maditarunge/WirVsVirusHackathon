@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CreateListButtonDelegate {
+    func createListTapped(_ list:GroceryList)
+}
+
 class CreateGroceryListViewController: UIViewController {
     
     // MARK: IBOutlet properties
@@ -21,6 +25,8 @@ class CreateGroceryListViewController: UIViewController {
     @IBOutlet weak var addItemButton: UIButton!
     // MARK: properties
     var listItems = [GroceryListItem]()
+    var groceryList = GroceryList()
+    var createListButtonDelegate:CreateListButtonDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +71,17 @@ class CreateGroceryListViewController: UIViewController {
     
     @objc func saveListTapped() {
         print("speichern")
+        if self.createListButtonDelegate != nil {
+            
+            dismiss(animated: true) {
+                
+                self.groceryList.title = self.storeNameField.text
+                self.groceryList.items = self.listItems
+                self.groceryList.receiver = User.createDummyUser()
+                self.createListButtonDelegate.createListTapped(self.groceryList)
+                
+            }
+        }
     }
     
     @objc func addItemTapped() {
@@ -99,5 +116,9 @@ extension CreateGroceryListViewController: CreateListItemButtonDelegate {
         tableView.reloadData()
     }
     
+    
+}
+
+extension CreateGroceryListViewController: UITextFieldDelegate {
     
 }

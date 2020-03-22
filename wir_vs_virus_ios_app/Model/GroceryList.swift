@@ -13,5 +13,6 @@ struct GroceryList: Codable {
     var id:Int?
     var receiver:User?
     var title:String?
+    var items:[GroceryListItem]?
     
 }

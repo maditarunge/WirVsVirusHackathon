@@ -45,11 +45,6 @@ class GroceryListViewController: UIViewController {
         list1.title = "Lidl Einkauf"
         lists.append(list1)
         
-        var list2 = GroceryList()
-        list2.id = 2
-        list2.receiver = User.createDummyUser()
-        list2.title = "Aldi Einkauf"
-        lists.append(list2)
         return lists
     }
     
@@ -124,11 +119,25 @@ extension GroceryListViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     @objc func createListButtonTapped() {
-        performSegue(withIdentifier: Constants.Segues.showCreateListSegue, sender: self)
+        // createListVC
+        let createListVC = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.createListVC) as! CreateGroceryListViewController
+        createListVC.createListButtonDelegate = self
+               createListVC.modalPresentationStyle = .fullScreen
+               present(createListVC, animated: true, completion:nil)
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return section == 0 ? 300 : 1.0
     }
+    
+}
+
+extension GroceryListViewController: CreateListButtonDelegate {
+    
+    func createListTapped(_ list: GroceryList) {
+        lists.append(list)
+        tableView.reloadData()
+    }
+    
     
 }
