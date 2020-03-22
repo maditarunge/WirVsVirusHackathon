@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -24,6 +25,7 @@ import com.example.hackathon.View.Fragments.ShoppingListFragment;
 public class MainActivity extends AppCompatActivity {
 
     private static FragmentManager fragmentManager;
+    private static BottomNavigationView navView;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); //enable full screen
         setContentView(R.layout.activity_main);
         showFragment(new HomeFragment());
-        BottomNavigationView navView = findViewById(R.id.nav_view);
+        navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
@@ -74,6 +76,11 @@ public class MainActivity extends AppCompatActivity {
                 .beginTransaction()
                 .replace(R.id.parentFragmentContainer, fragment)
                 .commit();
+    }
+
+    public static BottomNavigationView getNavView()
+    {
+        return navView;
     }
 
 }

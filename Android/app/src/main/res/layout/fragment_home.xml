@@ -54,6 +54,13 @@
             app:layout_constraintGuide_percent="0.85"/>
 
         <android.support.constraint.Guideline
+            android:id="@+id/guideline05v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"/>
+
+        <android.support.constraint.Guideline
             android:id="@+id/guideline10v"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,37 +88,44 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.9"/>
 
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline95v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"/>
+
         <TextView
             android:id="@+id/tw_hello"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/home_hello_home"
             android:textSize="30sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline10h"
-            app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvDescription01"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/home_description_01"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline20h"
-            app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
             app:layout_constraintTop_toTopOf="@+id/guideline15h" />
 
         <TextView
             android:id="@+id/tvDescription02"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/home_description_02"
             android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline25h"
-            app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
             app:layout_constraintTop_toTopOf="@+id/guideline20h" />
 
         <ImageButton

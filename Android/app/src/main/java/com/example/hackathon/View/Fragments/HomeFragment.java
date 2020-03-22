@@ -25,14 +25,16 @@ public class HomeFragment extends Fragment {
     private static View.OnClickListener mOnGoShoppingClickListenener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            MainActivity.showFragment(new GoShoppingFragment());
+            View view = MainActivity.getNavView().findViewById(R.id.navigation_goShopping);
+            view.performClick();
         }
     };
 
     private View.OnClickListener mOnShoppingListClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            MainActivity.showFragment(new ShoppingListFragment());
+            View view = MainActivity.getNavView().findViewById(R.id.navigation_shoppingList);
+            view.performClick();
         }
     };
 
