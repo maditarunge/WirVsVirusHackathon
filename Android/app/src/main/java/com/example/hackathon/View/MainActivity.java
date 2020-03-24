@@ -1,11 +1,6 @@
 package com.example.hackathon.View;
 
 import android.os.Bundle;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,12 +10,18 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 import com.example.hackathon.View.Fragments.GoShoppingFragment;
 import com.example.hackathon.View.Fragments.HomeFragment;
 import com.example.hackathon.R;
 import com.example.hackathon.View.Fragments.ProfileFragment;
 import com.example.hackathon.View.Fragments.SettingsFragment;
 import com.example.hackathon.View.Fragments.ShoppingListFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 

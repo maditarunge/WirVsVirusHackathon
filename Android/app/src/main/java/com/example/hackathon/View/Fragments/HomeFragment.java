@@ -1,26 +1,31 @@
 package com.example.hackathon.View.Fragments;
 
-import android.content.Context;
-import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ListView;
 
+import com.example.hackathon.View.Activity.MapsActivity;
 import com.example.hackathon.R;
 import com.example.hackathon.View.MainActivity;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.util.ArrayList;
-import java.util.List;
 
-
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements OnMapReadyCallback {
 
     private View rootView = null;
+    private MapView mapView = null;
+    private GoogleMap gmap;
 
     private static View.OnClickListener mOnGoShoppingClickListenener = new View.OnClickListener() {
         @Override
@@ -50,9 +55,23 @@ public class HomeFragment extends Fragment {
         ImageButton ibAddShoppingList = (ImageButton)rootView.findViewById(R.id.ibAddList);
         ibAddShoppingList.setOnClickListener(mOnShoppingListClickListener);
 
+        mapView = (MapView)rootView.findViewById(R.id.mapView);
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(this);
+
+//        Intent firstpage= new Intent(getActivity(),MapsActivity.class);
+//        getActivity().startActivity(firstpage);
 
         Log.i("CREATED!", "Fragment is created");
         return rootView;
     }
 
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        LatLng me = new LatLng(50.7737129,6.1100725);
+        gmap = googleMap;
+        gmap.getUiSettings().setZoomControlsEnabled(true);
+        gmap.addMarker(new MarkerOptions().position(me));
+        gmap.moveCamera(CameraUpdateFactory.newLatLngZoom(me, 10));
+    }
 }
