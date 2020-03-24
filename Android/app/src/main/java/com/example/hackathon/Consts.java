@@ -20,4 +20,6 @@ public class Consts {
         public static String username = "Max";
     }
 
+    public static final String MAPVIEW_BUNDLE_KEY = "MapViewBundleKey";
+
 }

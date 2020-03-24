@@ -1,7 +1,7 @@
 package com.example.hackathon.View.Fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.example.hackathon.View.Activity.MapsActivity;
+import com.example.hackathon.Consts;
 import com.example.hackathon.R;
 import com.example.hackathon.View.MainActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -55,8 +55,13 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         ImageButton ibAddShoppingList = (ImageButton)rootView.findViewById(R.id.ibAddList);
         ibAddShoppingList.setOnClickListener(mOnShoppingListClickListener);
 
+        Bundle mapViewBundle = null;
+        if(savedInstanceState != null)
+        {
+            mapViewBundle = savedInstanceState.getBundle(Consts.MAPVIEW_BUNDLE_KEY);
+        }
         mapView = (MapView)rootView.findViewById(R.id.mapView);
-        mapView.onCreate(savedInstanceState);
+        mapView.onCreate(mapViewBundle);
         mapView.getMapAsync(this);
 
 //        Intent firstpage= new Intent(getActivity(),MapsActivity.class);
@@ -71,7 +76,44 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         LatLng me = new LatLng(50.7737129,6.1100725);
         gmap = googleMap;
         gmap.getUiSettings().setZoomControlsEnabled(true);
-        gmap.addMarker(new MarkerOptions().position(me));
+        gmap.addMarker(new MarkerOptions().position(me).title("me"));
         gmap.moveCamera(CameraUpdateFactory.newLatLngZoom(me, 10));
+
+//        gmap.setMyLocationEnabled(true);
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mapView.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mapView.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        mapView.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mapView.onLowMemory();
+    }
+
+//    @Override
+//    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+//        super.onActivityCreated(savedInstanceState);
+//    }
 }

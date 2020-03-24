@@ -12,11 +12,11 @@
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline10h"
+            android:id="@+id/guideline05h"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.10"/>
+            app:layout_constraintGuide_percent="0.05"/>
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline15h"
@@ -33,25 +33,39 @@
             app:layout_constraintGuide_percent="0.20"/>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline25h"
+            android:id="@+id/guideline30h"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.25"/>
+            app:layout_constraintGuide_percent="0.30"/>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline70h"
+            android:id="@+id/guideline35h"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.70"/>
+            app:layout_constraintGuide_percent="0.35"/>
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline85h"
+            android:id="@+id/guideline75h"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.85"/>
+            app:layout_constraintGuide_percent="0.75"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline80h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.80"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline95h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95"/>
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline05v"
@@ -98,14 +112,15 @@
         <TextView
             android:id="@+id/tw_hello"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="top"
             android:text="@string/home_hello_home"
             android:textColor="@color/colorBlack"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline10h"
+            app:layout_constraintBottom_toTopOf="@+id/guideline15h"
             app:layout_constraintEnd_toStartOf="@id/guideline95v"
             app:layout_constraintStart_toStartOf="@id/guideline05v"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@id/guideline05h" />
 
         <TextView
             android:id="@+id/tvDescription01"
@@ -122,11 +137,12 @@
         <TextView
             android:id="@+id/tvDescription02"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="bottom"
             android:text="@string/home_description_02"
             android:textColor="@color/colorBlack"
-            android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline25h"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline30h"
             app:layout_constraintEnd_toStartOf="@id/guideline95v"
             app:layout_constraintStart_toStartOf="@id/guideline05v"
             app:layout_constraintTop_toTopOf="@+id/guideline20h" />
@@ -137,10 +153,10 @@
             android:layout_height="0dp"
             android:background="@color/colorDarcBlue"
             android:src="@mipmap/ic_shopping_bag"
-            app:layout_constraintBottom_toTopOf="@+id/guideline85h"
+            app:layout_constraintBottom_toTopOf="@+id/guideline95h"
             app:layout_constraintEnd_toStartOf="@+id/guideline40v"
             app:layout_constraintStart_toStartOf="@+id/guideline10v"
-            app:layout_constraintTop_toTopOf="@+id/guideline70h" />
+            app:layout_constraintTop_toTopOf="@+id/guideline80h" />
 
         <ImageButton
             android:id="@+id/ibAddList"
@@ -148,19 +164,32 @@
             android:layout_height="0dp"
             android:background="@color/colorBlue"
             android:src="@mipmap/ic_grocery_list"
-            app:layout_constraintBottom_toTopOf="@+id/guideline85h"
+            app:layout_constraintBottom_toTopOf="@+id/guideline95h"
             app:layout_constraintEnd_toStartOf="@+id/guideline90v"
             app:layout_constraintStart_toStartOf="@+id/guideline60v"
-            app:layout_constraintTop_toTopOf="@+id/guideline70h" />
+            app:layout_constraintTop_toTopOf="@+id/guideline80h" />
+
+<!--        <fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--            xmlns:map="http://schemas.android.com/apk/res-auto"-->
+<!--            xmlns:tools="http://schemas.android.com/tools"-->
+<!--            android:id="@+id/map"-->
+<!--            android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/guideline75h"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/guideline95v"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/guideline05v"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/guideline35h"-->
+<!--            tools:context=".HomeFragment" />-->
 
         <FrameLayout
             android:id="@+id/mapFrame"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline70h"
-            app:layout_constraintEnd_toStartOf="@+id/guideline90v"
-            app:layout_constraintStart_toStartOf="@+id/guideline10v"
-            app:layout_constraintTop_toTopOf="@+id/guideline25h">
+            app:layout_constraintBottom_toTopOf="@+id/guideline75h"
+            app:layout_constraintEnd_toStartOf="@+id/guideline95v"
+            app:layout_constraintStart_toStartOf="@+id/guideline05v"
+            app:layout_constraintTop_toTopOf="@+id/guideline35h">
 
             <com.google.android.gms.maps.MapView
                 android:id="@+id/mapView"
