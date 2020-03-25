@@ -1,5 +1,6 @@
 package com.example.hackathon.View;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.example.hackathon.View.Activity.CreateNewListActivity;
 import com.example.hackathon.View.Fragments.GoShoppingFragment;
 import com.example.hackathon.View.Fragments.HomeFragment;
 import com.example.hackathon.R;
@@ -82,6 +84,12 @@ public class MainActivity extends AppCompatActivity {
     public static BottomNavigationView getNavView()
     {
         return navView;
+    }
+
+    private void newList(View view)
+    {
+        Intent intent = new Intent(this, CreateNewListActivity.class);
+        startActivity(intent);
     }
 
 //    @Override

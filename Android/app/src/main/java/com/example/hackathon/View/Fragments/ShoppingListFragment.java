@@ -1,15 +1,18 @@
 package com.example.hackathon.View.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.hackathon.Consts;
 import com.example.hackathon.R;
+import com.example.hackathon.View.Activity.CreateNewListActivity;
 import com.example.hackathon.View.ListAdapter.ShoppingListListAdapter;
 
 import java.util.ArrayList;
@@ -38,6 +41,9 @@ public class ShoppingListFragment extends Fragment {
             e.printStackTrace();
         }
 
+        Button btnNewList = (Button)rootView.findViewById(R.id.button_new_list);
+        btnNewList.setOnClickListener(newListListener);
+
         Log.i("CREATED!", "Fragment is created");
         return rootView;
     }
@@ -58,4 +64,17 @@ public class ShoppingListFragment extends Fragment {
 
         return objects;
     }
+
+    private void newList()
+    {
+        Intent intent = new Intent(getActivity(), CreateNewListActivity.class);
+        startActivity(intent);
+    }
+
+    private Button.OnClickListener newListListener = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            newList();
+        }
+    };
 }

@@ -55,13 +55,13 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback {
         ImageButton ibAddShoppingList = (ImageButton)rootView.findViewById(R.id.ibAddList);
         ibAddShoppingList.setOnClickListener(mOnShoppingListClickListener);
 
-        Bundle mapViewBundle = null;
-        if(savedInstanceState != null)
-        {
-            mapViewBundle = savedInstanceState.getBundle(Consts.MAPVIEW_BUNDLE_KEY);
-        }
+//        Bundle mapViewBundle = null;
+//        if(savedInstanceState != null)
+//        {
+//            mapViewBundle = savedInstanceState.getBundle(Consts.MAPVIEW_BUNDLE_KEY);
+//        }
         mapView = (MapView)rootView.findViewById(R.id.mapView);
-        mapView.onCreate(mapViewBundle);
+        mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
 
 //        Intent firstpage= new Intent(getActivity(),MapsActivity.class);

@@ -34,8 +34,16 @@
     <string name="settings_title_contact_information">Meine Kontaktdaten</string>
     <string name="settings_data_protection">Datenschutz</string>
     <string name="settings_data_protection_content">-- Hier können Datenschutzinformationen stehen --</string>
-<!--    <string name="settings_data_protection_content">Hiermit bestätige ich, dass die Nutzung der generierten Datenschutzerklärung auf eigenes Risiko erfolgt. Für eventuelle Fehler wird keine Haftung übernommen und die Verwendung dieser Texte kann keine Rechtsberatung ersetzen. Der in der Datenschutzerklärung inkludierte Verweis samt Verlinkung auf den Urheber darf nicht entfernt werden. Es gelten unsere AGB und Datenschutzerklärung.-->
-<!--Ich bestätige hiermit, die erzeugten Datenschutztexte nur samt Quellverweis und Links online zu stellen.</string>-->
+    <!--    <string name="settings_data_protection_content">Hiermit bestätige ich, dass die Nutzung der generierten Datenschutzerklärung auf eigenes Risiko erfolgt. Für eventuelle Fehler wird keine Haftung übernommen und die Verwendung dieser Texte kann keine Rechtsberatung ersetzen. Der in der Datenschutzerklärung inkludierte Verweis samt Verlinkung auf den Urheber darf nicht entfernt werden. Es gelten unsere AGB und Datenschutzerklärung.-->
+    <!--Ich bestätige hiermit, die erzeugten Datenschutztexte nur samt Quellverweis und Links online zu stellen.</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="new_list_title">Neue Liste anlegen</string>
+    <string name="new_list_description">Hier steht dann ein längerer Infotext</string>
+    <string name="new_list_button_new_entry">+ Eintrag hinzufügen</string>
+    <string name="new_list_button_save_list">Liste abspeichern</string>
+    <string name="new_list_button_cancel">Abbrechen</string>
+    <string name="new_list_market">Supermarkt</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
