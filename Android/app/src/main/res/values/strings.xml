@@ -46,6 +46,16 @@
     <string name="new_list_market">Supermarkt</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="new_entry_item">Artikel</string>
+    <string name="new_entry_title">Neuen Eintrag erstellen</string>
+    <string name="new_entry_save">Eintrag hinzufügen</string>
+    <string name="new_entry_cancel">Abbrechen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="take_list_take">Einkauf übernehmen</string>
+    <string name="take_list_cancel">Zurück</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="title_activity_create_new_list">CreateNewListActivity</string>
