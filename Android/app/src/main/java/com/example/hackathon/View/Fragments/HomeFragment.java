@@ -10,9 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import com.example.hackathon.Consts;
 import com.example.hackathon.R;
-import com.example.hackathon.View.MainActivity;
+import com.example.hackathon.View.Activity.MainActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;

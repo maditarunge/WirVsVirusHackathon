@@ -1,4 +1,4 @@
-package com.example.hackathon.View;
+package com.example.hackathon.View.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
