@@ -4,6 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.Activity.LoginActivity">
+    tools:context=".View.Activity.CreateNewListActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline30h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.30"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline40h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline50h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.50"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline55h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline65h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline05v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline95v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlue"
+            android:text="@string/new_list_button_save_list"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toTopOf="@+id/guideline65h"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
+            app:layout_constraintTop_toTopOf="@+id/guideline55h" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/new_list_title"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline30h"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
+            app:layout_constraintTop_toTopOf="@id/guideline15h" />
+
+        <TextView
+            android:id="@+id/tvLoginFailed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/new_list_description"
+            android:textColor="@color/colorPinkButtons"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline55h"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
+            app:layout_constraintTop_toTopOf="@+id/guideline50h" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/new_list_market"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@id/guideline40h"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
+            app:layout_constraintTop_toTopOf="@+id/guideline30h" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/new_list_market"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@id/guideline50h"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
+            app:layout_constraintTop_toTopOf="@+id/guideline40h" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
