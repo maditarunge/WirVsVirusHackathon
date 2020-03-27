@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Das Einkaufsnetz</string>
     <string name="title_home">Home</string>
-    <string name="title_go_shopping">Go Shopping</string>
-    <string name="title_shopping_list">Shopping Lists</string>
-    <string name="title_profile">Profile</string>
-    <string name="title_settings">Settings</string>
+    <string name="title_go_shopping">Anstehende Einkäufe</string>
+    <string name="title_shopping_list">Meine Einkaufslisten</string>
+    <string name="title_profile">Profil</string>
+    <string name="title_settings">Einstellungen</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="home_hello_home">Willkommen zurück, </string>

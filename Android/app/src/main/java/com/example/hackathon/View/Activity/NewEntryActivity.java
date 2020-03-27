@@ -47,7 +47,7 @@ public class NewEntryActivity extends AppCompatActivity {
         btnCancel.setOnClickListener(closeListener);
         btnSave.setOnClickListener(saveListener);
 
-        setList(details);
+        setList(prepareDemoList());
     }
 
     public void setList(List<Pair<String, Boolean>> list)
@@ -81,8 +81,13 @@ public class NewEntryActivity extends AppCompatActivity {
         finish();
     }
 
-//    public void select()
-//    {
-//
-//    }
+    private List<Pair<String, Boolean>> prepareDemoList()
+    {
+        List<Pair<String, Boolean>> objects = new ArrayList<>();
+
+        objects.add(new Pair<String, Boolean>("Bio", false));
+        objects.add(new Pair<String, Boolean>("Glutenfrei", false));
+
+        return objects;
+    }
 }
