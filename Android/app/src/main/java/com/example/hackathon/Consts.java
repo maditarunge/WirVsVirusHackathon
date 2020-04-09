@@ -1,12 +1,10 @@
 package com.example.hackathon;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.example.hackathon.Model.User;
 
 public class Consts {
+
+    public static User user;
 
     public static class Indexer
     {
@@ -18,6 +16,7 @@ public class Consts {
     public static class TestData
     {
         public static String username = "Max";
+        public static boolean testVersion = true;
     }
 
     public static final String MAPVIEW_BUNDLE_KEY = "MapViewBundleKey";

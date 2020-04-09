@@ -1,7 +1,5 @@
 package com.example.hackathon.View.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +8,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.hackathon.Consts;
+import com.example.hackathon.Main;
+import com.example.hackathon.Model.User;
 import com.example.hackathon.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -43,8 +46,13 @@ public class LoginActivity extends AppCompatActivity {
         EditText etPassword = findViewById(R.id.etPassword);
         TextView tvLoginFailed = findViewById(R.id.tvLoginFailed);
 
-        boolean ok = true; //TODO MR 2020-03-27 1845: Add login control
-        if (ok)
+        boolean ok = false; //TODO MR 2020-03-27 1845: Add login control
+        Consts.user = Main.getUser(etUsername.getText().toString());
+        if (Consts.user != null && Consts.user.isActive() && Consts.user.getPassword().equals(User.encryptPass(etPassword.getText().toString())))
+        {
+            ok = true;
+        }
+        if (ok || Consts.TestData.testVersion)
         {
             tvLoginFailed.setVisibility(View.INVISIBLE);
             Intent intent = new Intent(this, MainActivity.class);
