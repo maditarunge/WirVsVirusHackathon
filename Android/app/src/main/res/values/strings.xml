@@ -22,18 +22,18 @@
     <string name="go_shopping_button">Liste anlegen</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="settings_first_name">Vorname</string>
-    <string name="settings_sur_name">Nachname</string>
-    <string name="settings_street">Straße</string>
-    <string name="settings_plz">Postleitzahl</string>
-    <string name="settings_city">Stadt</string>
-    <string name="settings_telephone">Telefon</string>
-    <string name="settings_mail">Mail</string>
+    <string name="account_first_name">Vorname</string>
+    <string name="account_sur_name">Nachname</string>
+    <string name="account_street">Straße</string>
+    <string name="account_plz">Postleitzahl</string>
+    <string name="account_city">Stadt</string>
+    <string name="account_telephone">Telefon</string>
+    <string name="account_mail">Mail</string>
 
-    <string name="settings_title_address">Meine Adresse</string>
-    <string name="settings_title_contact_information">Meine Kontaktdaten</string>
-    <string name="settings_data_protection">Datenschutz</string>
-    <string name="settings_data_protection_content">-- Hier können Datenschutzinformationen stehen --</string>
+    <string name="account_title_address">Meine Adresse</string>
+    <string name="account_title_contact_information">Meine Kontaktdaten</string>
+    <string name="account_data_protection">Datenschutz</string>
+    <string name="account_data_protection_content">-- Hier können Datenschutzinformationen stehen --</string>
     <!--    <string name="settings_data_protection_content">Hiermit bestätige ich, dass die Nutzung der generierten Datenschutzerklärung auf eigenes Risiko erfolgt. Für eventuelle Fehler wird keine Haftung übernommen und die Verwendung dieser Texte kann keine Rechtsberatung ersetzen. Der in der Datenschutzerklärung inkludierte Verweis samt Verlinkung auf den Urheber darf nicht entfernt werden. Es gelten unsere AGB und Datenschutzerklärung.-->
     <!--Ich bestätige hiermit, die erzeugten Datenschutztexte nur samt Quellverweis und Links online zu stellen.</string>-->
 
@@ -62,19 +62,26 @@
     <string name="login_password">Passwort</string>
     <string name="login_button">Login</string>
 
-<!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
-<!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--    <string name="title_activity_create_new_list">CreateNewListActivity</string>-->
-<!--    <string name="dummy_button">Dummy Button</string>-->
-<!--    <string name="dummy_content">DUMMY\nCONTENT</string>-->
-<!--    <string name="title_activity_login">Sign in</string>-->
-<!--    <string name="prompt_email">Email</string>-->
-<!--    <string name="prompt_password">Password</string>-->
-<!--    <string name="action_sign_in">Sign in or register</string>-->
-<!--    <string name="action_sign_in_short">Sign in</string>-->
-<!--    <string name="welcome">"Welcome !"</string>-->
-<!--    <string name="invalid_username">Not a valid username</string>-->
-<!--    <string name="invalid_password">Password must be >5 characters</string>-->
-<!--    <string name="login_failed">"Login failed"</string>-->
+    <string name="settings_my_settings_header">Persönliche Einstellungen</string>
+    <string name="settings_profile_header">Profileinstellungen</string>
+    <string name="settings_information_header">Persönliche Einstellungen</string>
+
+    <!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+    <!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+
+    <!--    <string name="title_activity_create_new_list">CreateNewListActivity</string>-->
+    <!--    <string name="dummy_button">Dummy Button</string>-->
+    <!--    <string name="dummy_content">DUMMY\nCONTENT</string>-->
+    <!--    <string name="title_activity_login">Sign in</string>-->
+    <!--    <string name="prompt_email">Email</string>-->
+    <!--    <string name="prompt_password">Password</string>-->
+    <!--    <string name="action_sign_in">Sign in or register</string>-->
+    <!--    <string name="action_sign_in_short">Sign in</string>-->
+    <!--    <string name="welcome">"Welcome !"</string>-->
+    <!--    <string name="invalid_username">Not a valid username</string>-->
+    <!--    <string name="invalid_password">Password must be >5 characters</string>-->
+    <!--    <string name="login_failed">"Login failed"</string>-->
 </resources>
