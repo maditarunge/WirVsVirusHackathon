@@ -39,10 +39,10 @@ public class LoginActivity extends AppCompatActivity {
         tvLoginFailed.setVisibility(View.INVISIBLE);
 
         Button btnLogin = findViewById(R.id.button_login);
-        btnLogin.setOnClickListener(newEntryListener);
+        btnLogin.setOnClickListener(loginListener);
     }
 
-    private Button.OnClickListener newEntryListener = new Button.OnClickListener() {
+    private Button.OnClickListener loginListener = new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
             login();

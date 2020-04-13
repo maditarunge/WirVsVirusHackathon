@@ -1,15 +1,19 @@
 package com.example.hackathon.View.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
+
+import androidx.fragment.app.Fragment;
 
 import com.example.hackathon.Consts;
 import com.example.hackathon.R;
+import com.example.hackathon.View.Activity.CreateNewTourActivity;
 import com.example.hackathon.View.ListAdapter.GoShoppingListAdapter;
 
 import java.util.ArrayList;
@@ -39,6 +43,8 @@ public class GoShoppingFragment extends Fragment {
             e.printStackTrace();
         }
 
+        Button btnNewTour = (Button)rootView.findViewById(R.id.button_create_tour);
+        btnNewTour.setOnClickListener(newEntryListener);
 
         Log.i("CREATED!", "Fragment is created");
         return rootView;
@@ -63,5 +69,18 @@ public class GoShoppingFragment extends Fragment {
         objects.add(map02);
 
         return objects;
+    }
+
+    private Button.OnClickListener newEntryListener = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            newTour();
+        }
+    };
+
+    public void newTour()
+    {
+        Intent intent = new Intent(getContext(), CreateNewTourActivity.class);
+        startActivity(intent);
     }
 }

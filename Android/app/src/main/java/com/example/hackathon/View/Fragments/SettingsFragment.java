@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
@@ -66,7 +65,7 @@ public class SettingsFragment extends Fragment {
             public boolean onPreferenceClick(androidx.preference.Preference preference) {
                 Intent intent = new Intent(getActivity(), ProfileActivity.class);
                 startActivity(intent);
-                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
                 return true;
             }
         };
@@ -76,7 +75,7 @@ public class SettingsFragment extends Fragment {
             public boolean onPreferenceClick(androidx.preference.Preference preference) {
                 Intent intent = new Intent(getActivity(), ChangePasswordActivity.class);
                 startActivity(intent);
-                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
                 return true;
             }
         };
@@ -87,7 +86,7 @@ public class SettingsFragment extends Fragment {
 //                (SwitchPreference)preference.
                 Consts.SharedPrefs.editor.putBoolean(Consts.SharedPrefs.Values.STAY_LOGGED_IN, (boolean) newValue);
                 Consts.SharedPrefs.editor.apply();
-                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
                 return true;
             }
         };
@@ -96,7 +95,7 @@ public class SettingsFragment extends Fragment {
             @Override
             public boolean onPreferenceClick(androidx.preference.Preference preference) {
                 doDialogAlert("Datenschutz", "Dies sind unsere Datenschutzinformationen ...");
-                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
                 return true;
             }
         };
@@ -105,7 +104,7 @@ public class SettingsFragment extends Fragment {
             @Override
             public boolean onPreferenceClick(androidx.preference.Preference preference) {
                 doDialogAlert("Über diese App", "Version: 1.0\nInformation ...");
-                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();
                 return true;
             }
         };

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/logo_blue"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Activity.ProfileActivity"></activity>
+        <activity android:name=".View.Activity.CreateNewTourActivity"></activity>
+        <activity android:name=".View.Activity.ProfileActivity" />
         <activity android:name=".View.Activity.ChangePasswordActivity" />
         <activity android:name=".View.Activity.MainActivity" />
         <activity android:name=".View.Activity.TakeShoppingListActivity" />
