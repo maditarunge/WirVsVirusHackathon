@@ -54,6 +54,27 @@
             app:layout_constraintGuide_percent="0.65"/>
 
         <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline80h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.80"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline85h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline95h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95"/>
+
+        <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline05v"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,6 +100,19 @@
             app:layout_constraintEnd_toStartOf="@id/guideline95v"
             app:layout_constraintStart_toStartOf="@id/guideline05v"
             app:layout_constraintTop_toTopOf="@+id/guideline55h" />
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDarcBlue"
+            android:text="@string/login_register"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toTopOf="@+id/guideline95h"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
+            app:layout_constraintTop_toTopOf="@+id/guideline85h" />
 
         <TextView
             android:id="@+id/tvLogin"
@@ -107,6 +141,19 @@
             app:layout_constraintStart_toStartOf="@id/guideline05v"
             app:layout_constraintTop_toTopOf="@+id/guideline50h" />
 
+        <TextView
+            android:id="@+id/tvRegisterText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/login_register_text"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline85h"
+            app:layout_constraintEnd_toStartOf="@id/guideline95v"
+            app:layout_constraintStart_toStartOf="@id/guideline05v"
+            app:layout_constraintTop_toTopOf="@+id/guideline80h" />
+
         <EditText
             android:id="@+id/etUsername"
             android:layout_width="0dp"
@@ -125,7 +172,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/login_password"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@id/guideline50h"
             app:layout_constraintEnd_toStartOf="@id/guideline95v"
             app:layout_constraintStart_toStartOf="@id/guideline05v"

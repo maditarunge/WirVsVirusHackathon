@@ -1,12 +1,14 @@
 package com.example.hackathon;
 
 import android.content.SharedPreferences;
+import android.location.Location;
 
 import com.example.hackathon.Model.User;
 
 public class Consts {
 
     public static User user;
+    public static Location location;
 
     public static class Indexer
     {

@@ -61,9 +61,8 @@
     <string name="login_username">Benutzername</string>
     <string name="login_password">Passwort</string>
     <string name="login_button">Login</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_register">Registrieren</string>
+    <string name="login_register_text">Noch kein Account?</string>
 
     <string name="settings_my_settings_header">Persönliche Einstellungen</string>
     <string name="settings_profile_header">Profileinstellungen</string>
@@ -83,5 +82,19 @@
     <string name="new_tour_shop">Einkaufsladen</string>
     <string name="new_tour_save">Einkauf hinzufügen</string>
     <string name="new_tour_cancel">Abbrechen</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="register_pw_title">Registrieren</string>
+    <string name="register_pw_failed">Registrieren fehlgeschlagen</string>
+    <string name="register_pw_username">Benutzername</string>
+    <string name="register_pw_password">Passwort</string>
+    <string name="register_pw_confirm">Passwort bestätigen</string>
+    <string name="register_pw_button">Registrieren</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="profile_new">Speichern</string>
+    <string name="profile_change">Ändern</string>
+    <string name="profile_unknown">Bestätigen</string>
 
 </resources>

@@ -63,6 +63,7 @@ public class SettingsFragment extends Fragment {
         private androidx.preference.Preference.OnPreferenceClickListener onPreferenceClickListenerAccount = new androidx.preference.Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(androidx.preference.Preference preference) {
+                ProfileActivity.status = ProfileActivity.Status.CHANGE;
                 Intent intent = new Intent(getActivity(), ProfileActivity.class);
                 startActivity(intent);
 //                Toast.makeText(getContext(),"Clicked",Toast.LENGTH_SHORT).show();

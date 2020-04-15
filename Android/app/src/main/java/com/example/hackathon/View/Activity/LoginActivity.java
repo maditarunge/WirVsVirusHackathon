@@ -40,12 +40,21 @@ public class LoginActivity extends AppCompatActivity {
 
         Button btnLogin = findViewById(R.id.button_login);
         btnLogin.setOnClickListener(loginListener);
+
+        Button btnRegister = findViewById(R.id.button_register);
+        btnRegister.setOnClickListener(registerListener);
     }
 
     private Button.OnClickListener loginListener = new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
             login();
+        }
+    };
+    private Button.OnClickListener registerListener = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startRegisterActivity();
         }
     };
 
@@ -72,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
         if (ok || Consts.TestData.testVersion)
         {
             tvLoginFailed.setVisibility(View.INVISIBLE);
-            startNewActivity();
+            startMainActivity();
         }
         else
         {
@@ -80,9 +89,15 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void startNewActivity()
+    private void startMainActivity()
     {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void startRegisterActivity()
+    {
+        Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.Activity.ChangePasswordActivity">
+    tools:context=".View.Activity.RegisterActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline15h"
@@ -70,11 +70,11 @@
         app:layout_constraintGuide_percent="0.95"/>
 
     <Button
-        android:id="@+id/button_change"
+        android:id="@+id/button_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorBlue"
-        android:text="@string/change_password_button"
+        android:background="@color/colorDarcBlue"
+        android:text="@string/register_pw_button"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/guideline75h"
@@ -87,7 +87,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/change_password_title"
+        android:text="@string/register_pw_title"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:visibility="visible"
@@ -101,7 +101,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/change_password_failed"
+        android:text="@string/register_pw_failed"
         android:textColor="@color/colorPinkButtons"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline65h"
@@ -109,36 +109,36 @@
         app:layout_constraintStart_toStartOf="@id/guideline05v"
         app:layout_constraintTop_toTopOf="@+id/guideline60h" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/etUsername"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:ems="10"-->
-<!--        android:hint="@string/login_username"-->
-<!--        android:inputType="textPersonName"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/guideline40h"-->
-<!--        app:layout_constraintEnd_toStartOf="@id/guideline95v"-->
-<!--        app:layout_constraintStart_toStartOf="@id/guideline05v"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/guideline30h" />-->
+    <!--    <EditText-->
+    <!--        android:id="@+id/etUsername"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="@string/login_username"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/guideline40h"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/guideline95v"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/guideline05v"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline30h" />-->
 
     <EditText
-        android:id="@+id/etOldPassword"
+        android:id="@+id/etUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/change_password_old"
-        android:inputType="textPassword"
+        android:hint="@string/register_pw_username"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@id/guideline40h"
         app:layout_constraintEnd_toStartOf="@id/guideline95v"
         app:layout_constraintStart_toStartOf="@id/guideline05v"
         app:layout_constraintTop_toTopOf="@+id/guideline30h" />
 
     <EditText
-        android:id="@+id/etNewPassword"
+        android:id="@+id/etPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/change_password_new"
+        android:hint="@string/register_pw_password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@id/guideline50h"
         app:layout_constraintEnd_toStartOf="@id/guideline95v"
@@ -150,7 +150,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/change_password_confirm"
+        android:hint="@string/register_pw_confirm"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@id/guideline60h"
         app:layout_constraintEnd_toStartOf="@id/guideline95v"
