@@ -22,6 +22,7 @@ public class MapsFragment extends Fragment {
 
 //    private LocationManager locationManager = (LocationManager) this.getSystemService(LOCATION_SERVICE);
 
+    private static GoogleMap gmap;
     private OnMapReadyCallback callback = new OnMapReadyCallback() {
 
         /**
@@ -35,12 +36,8 @@ public class MapsFragment extends Fragment {
          */
         @Override
         public void onMapReady(GoogleMap googleMap) {
-            if(Consts.location != null)
-            {
-                LatLng ownPosition = new LatLng(Consts.location.getLatitude(), Consts.location.getLongitude());
-                googleMap.addMarker(new MarkerOptions().position(ownPosition).title("Mein Standort"));
-                googleMap.moveCamera(CameraUpdateFactory.newLatLng(ownPosition));
-            }
+            gmap = googleMap;
+            updateOwnLocation();
         }
     };
 
@@ -59,6 +56,17 @@ public class MapsFragment extends Fragment {
                 (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         if (mapFragment != null) {
             mapFragment.getMapAsync(callback);
+        }
+    }
+
+    public static void updateOwnLocation()
+    {
+        if(Consts.location != null && gmap != null)
+        {
+            LatLng ownPosition = new LatLng(Consts.location.getLatitude(), Consts.location.getLongitude());
+            gmap.addMarker(new MarkerOptions().position(ownPosition).title("Mein Standort"));
+            gmap.moveCamera(CameraUpdateFactory.newLatLng(ownPosition));
+            gmap.animateCamera(CameraUpdateFactory.newLatLngZoom(ownPosition, 12.0f));
         }
     }
 }

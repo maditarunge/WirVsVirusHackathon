@@ -22,6 +22,7 @@ import com.example.hackathon.Consts;
 import com.example.hackathon.R;
 import com.example.hackathon.View.Fragments.GoShoppingFragment;
 import com.example.hackathon.View.Fragments.HomeFragment;
+import com.example.hackathon.View.Fragments.MapsFragment;
 import com.example.hackathon.View.Fragments.ProfileFragment;
 import com.example.hackathon.View.Fragments.SettingsFragment;
 import com.example.hackathon.View.Fragments.ShoppingListFragment;
@@ -184,6 +185,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     @Override
     public void onLocationChanged(Location location) {
         Consts.location = location;
+        MapsFragment.updateOwnLocation();
     }
 
     @Override
